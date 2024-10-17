@@ -133,6 +133,9 @@
                         <TextBlock Height="19"><Run Language="es-419" Text="Eliminar"/><LineBreak/><Run Language="es-419"/></TextBlock>
                     </StackPanel>
                 </Button>
+
+                <Frame Grid.Row="4" x:Name="MainFrame" NavigationUIVisibility="Hidden" Margin="0,16,10,66"/>
+
             </Grid>
         </Grid>
     </Border>

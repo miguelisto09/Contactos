@@ -1,20 +1,16 @@
-﻿using System.Text;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Collections.ObjectModel;
 
 namespace Contactos
 {
-
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+
+            // Cargar la primera página (Page1) en el frame al iniciar la aplicación
+            MainFrame.Navigate(new Page1());
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
@@ -24,7 +20,6 @@ namespace Contactos
                 this.DragMove();
             }
         }
-
 
         private bool IsMaximized = false;
         private void Border_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -38,20 +33,18 @@ namespace Contactos
                     this.Height = 720;
 
                     IsMaximized = false;
-
                 }
                 else
                 {
                     this.WindowState = WindowState.Maximized;
-
-                        IsMaximized = true;
+                    IsMaximized = true;
                 }
             }
         }
 
         private void DataGrid_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
-
+            // Implementa la lógica del DataGrid si es necesario
         }
     }
 }
