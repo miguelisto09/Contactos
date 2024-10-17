@@ -70,5 +70,10 @@ namespace Contactos
         {
 
         }
+
+        private void Registrar_contacto_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
