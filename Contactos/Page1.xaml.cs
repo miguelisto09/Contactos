@@ -26,22 +26,20 @@ namespace Contactos
         }
         private void CerrarVentana_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult resultado = MessageBox.Show("¿Estás seguro de que deseas cerrar la ventana?",
-                                                     "Confirmación",
-                                                     MessageBoxButton.YesNo,
-                                                     MessageBoxImage.Question);
-
-            if (resultado == MessageBoxResult.Yes)
+            // Obtener la ventana principal
+            var ventana = Window.GetWindow(this);
+            if (ventana != null)
             {
-
-                Window ventana = Window.GetWindow(this);
-                if (ventana != null)
+                // Encontrar el Frame en la ventana principal
+                var frame = ventana.FindName("MainFrame") as Frame;
+                if (frame != null)
                 {
-                    ventana.Close();
+                    frame.Visibility = Visibility.Collapsed; // Cambiar la visibilidad del Frame a Collapsed
                 }
             }
-
         }
+
+
         private void minimizar(object sender, RoutedEventArgs e)
         {
 

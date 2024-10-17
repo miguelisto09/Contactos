@@ -100,7 +100,7 @@
                            HorizontalAlignment="Left" Foreground="#121518"/>
 
                 <!-- Add Contact Button -->
-                <Button Style="{StaticResource addButton}" Grid.Row="1" Margin="0,20,10,54" Grid.RowSpan="3" Width="192">
+                <Button Style="{StaticResource addButton}" Grid.Row="1" Margin="0,20,10,54" Grid.RowSpan="3" Width="192" Click="Button_Click">
                     <StackPanel Orientation="Horizontal">
                         <Icon:PackIconMaterial Kind="Plus" VerticalAlignment="Center" Width="11" Height="11" Margin="0 1 8 0"/>
                         <TextBlock Text="Añadir Contacto"/>
@@ -121,7 +121,9 @@
                 <DataGrid Grid.Row="4" av:ItemsSource="{av:SampleData ItemCount=1}"
                           AutoGenerateColumns="True" Margin="0,16,10,66"
                           SelectionChanged="DataGrid_SelectionChanged"
-                          Style="{StaticResource CustomDataGridStyle}"/>
+                          Style="{StaticResource CustomDataGridStyle}">
+
+                </DataGrid>
                 <ComboBox HorizontalAlignment="Left" Margin="167,31,0,0" Grid.Row="1" VerticalAlignment="Top" Width="176" Height="28"/>
                 <Button Style="{StaticResource addButton}" Grid.Row="4" Margin="0,460,150,10" Width="114">
                     <StackPanel Orientation="Horizontal">
@@ -134,9 +136,13 @@
                     </StackPanel>
                 </Button>
 
-                <Frame Grid.Row="4" x:Name="MainFrame" NavigationUIVisibility="Hidden" Margin="0,16,10,66"/>
 
             </Grid>
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2" />
+
+
         </Grid>
+
     </Border>
+
 </Window>
