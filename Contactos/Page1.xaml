@@ -16,14 +16,14 @@
         </Grid.ColumnDefinitions>
 
         <!-- Panel Izquierdo (Fondo turquesa) -->
-        <Border Background="#6F50FF" Padding="30" CornerRadius="25 0 0 25" Margin="-101,-99,72,-98">
+        <Border Background="#623ed0" Padding="30" CornerRadius="25 0 0 25" Margin="-101,-99,72,-98">
             <StackPanel VerticalAlignment="Center">
                 <fa:ImageAwesome Icon="UserCircle" Width="166" Height="166" Foreground="White"/>
                 <TextBlock Text="Bienvenido/a" TextAlignment="Center" FontWeight="SemiBold" FontSize="50" Foreground="White"/>
                 <TextBlock TextWrapping="Wrap" FontSize="20" TextAlignment="Center" Foreground="White" Margin="0 20 0 20" Text="Aquí puedes registrar un nuevo contacto."/>
 
                 <!-- Botón con ícono -->
-                <Button Style="{StaticResource buttonBlack}" Width="50" Height="50" HorizontalAlignment="Center">
+                <Button Style="{StaticResource buttonBlack}" Width="79" Height="50" HorizontalAlignment="Center">
                     <fa:ImageAwesome Icon="AngleRight" Width="30" Height="16" Foreground="Black"/>
                 </Button>
             </StackPanel>
