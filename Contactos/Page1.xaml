@@ -24,7 +24,7 @@
 
                 <!-- Botón con ícono -->
                 <Button Style="{StaticResource buttonBlack}" Width="50" Height="50" HorizontalAlignment="Center">
-                    <fa:ImageAwesome Icon="AngleRight" Width="30" Height="16" Foreground="White"/>
+                    <fa:ImageAwesome Icon="AngleRight" Width="30" Height="16" Foreground="Black"/>
                 </Button>
             </StackPanel>
         </Border>
