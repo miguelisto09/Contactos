@@ -4,8 +4,8 @@
              xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
              StartupUri="MainWindow.xaml"
     xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2">
+    
     <Application.Resources>
-
 
 
         <Style x:Key="topButton" TargetType="Button">

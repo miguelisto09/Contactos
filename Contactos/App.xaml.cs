@@ -9,6 +9,8 @@ namespace Contactos
     /// </summary>
     public partial class App : Application
     {
+    
+
     }
 
 }
