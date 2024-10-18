@@ -65,10 +65,10 @@
                                 </StackPanel>
                             </Button>
 
-                            <Button Style="{StaticResource menuButton}">
+                            <Button Style="{StaticResource menuButton} ">
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="CalendarClock" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Agendar"/>
+                                    <TextBlock Text="Agendar"/> 
                                 </StackPanel>
                             </Button>
                         </StackPanel>
@@ -182,7 +182,7 @@
 
 
             </Grid>
-            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2" Margin="-55,-58,79,111" />
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2" Margin="10,10,10,10" Navigated="MainFrame_Navigated" />
 
 
         </Grid>
